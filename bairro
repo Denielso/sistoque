@@ -1,0 +1,46 @@
+<link href="/Projeto_Individual_Sistoque/resources/paginas/css/estilo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="bairro/bairro.js"></script>
+
+	<div class="bairro_geral">
+		
+			<div class="titulo" title="Aqui você cadastra bairro.">Cadastrar Bairro</div>
+		
+		<fieldset class="fieldset_bairro">
+			<form id="formBairro" action="">
+				<table id="conteudo_fieldset">
+					<tr>
+						<td class="nomes">Código</td>
+						<td><input type="text" class="campos" id="codBai" maxlength="8" placeholder="Código"></td>
+					</tr>
+					<tr>
+						<td class="nomes" >Estado</td>
+						<td>
+							<select name="estado" class="selecao" id="carregaEst">
+							<option value="0">======= Selecione =======</option>
+							</select> 
+						</td>						
+						
+					</tr>
+					<tr>
+						<td class="nomes" >Cidade</td>
+						<td>
+							<select name="cidade" class="selecao" id="carregaCid">
+							<option value="0">======= Selecione =======</option>
+							</select> 
+						</td>						
+					</tr>	
+					<tr>
+						<td class="nomes" >Bairro</td>
+						<td><input class="campos" id="nomeBai" type="text"  maxlength="20" placeholder="Nome"></td>						
+					</tr>	
+					<tr>
+						<td colspan="4">
+							<button type="reset" title="Clique para Limpar." class="botao">Limpar</button>
+							<input type="button" title="Clique para Registrar." value="Registrar" class="botao" onclick="SENAI.bairro.bairro()">
+						</td>
+					</tr>
+				</table>
+			</form>		
+		</fieldset>
+		<div id="exibirBairro" class="displayNone"></div>
+	</div>
